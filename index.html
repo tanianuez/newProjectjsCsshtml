@@ -1,1 +1,60 @@
-file 
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reverse a String</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1>Reverse a String</h1>
+            </div>
+            <div id="wrapper">
+                <div id="content">
+                    <div id="main">
+                        <h2>Reverse a String</h2>
+                        <p>
+                            <?php
+                                $string = "Hello World!";
+                                echo "The string is " . $string . ".<br>";
+                                echo "The reversed string is ";
+                                $length = strlen($string);
+                                for ($i = $length - 1; $i >= 0; $i--) {
+                                    echo $string[$i];
+                                }
+                            ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>&copy; <?php echo date("Y"); ?> - <a href="http://www.jamesdbloom.com/">James D Bloom</a></p>
+            </div>
+        </div>
+    </body>
+
+<head>
+    <title>Javascript Introduction</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<!--	Body for TodoList-->
+<div id="myDIV" class="header">
+    <h3>My ToDo List </h3>
+    <input type="text" id="myInput" placeholder="Task..."/>
+    <span class="addBtn" onclick="newElement()">Add</span>
+</div>
+
+<!--einen unorganisierte liste, die neuen Tasks bekommt und in sich einpackt -->
+<ul id="myUL">
+    <li>Watch coding tutorials on javascript</li>
+    <li>Make a Blog about my first website with Html and Css</li>
+</ul>
+
+<script src="scripts.js"></script>
+</body>
+
+</html>
+
+
